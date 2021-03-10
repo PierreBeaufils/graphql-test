@@ -1,7 +1,7 @@
 const csv = require('csvtojson');
 
-const sets = async () => csv().fromFile('../data/sets.csv');
-const themes = async () => csv().fromFile('../data/themes.csv');
+const themes = async () => csv().fromFile(__dirname + '/../data/themes.csv');
+const sets = async () => csv().fromFile(__dirname + '/../data/sets.csv');
 
 module.exports = {
     sets,

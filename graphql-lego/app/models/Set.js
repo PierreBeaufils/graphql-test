@@ -1,6 +1,6 @@
-import {
-    sets as db
-} from '../database';
+const {
+    sets: db
+} = require('../database');
 
 class Set {
     constructor(data) {

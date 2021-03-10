@@ -33,14 +33,14 @@ const typeDefs = `
 // Resolvers
 const resolvers = {
     Query: {
-        set: async (_, {
+        set: (_, {
             set_num
         }) => Set.findOne(set_num),
-        sets: async _ => Set.findAll(),
-        theme: async (_, {
+        sets: _ => Set.findAll(),
+        theme: (_, {
             id
         }) => Theme.findOne(id),
-        themes: async _ => Theme.findAll()
+        themes: _ => Theme.findAll()
     },
     Set: {
         theme: ({

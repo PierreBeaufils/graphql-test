@@ -1,6 +1,6 @@
-import {
-    themes as db
-} from '../database';
+const {
+    themes: db
+} = require('../database');
 
 class Theme {
     constructor(data) {
@@ -16,7 +16,7 @@ class Theme {
 
     static async findOne(id) {
         const themes = await db();
-        return themes.find(t => t.id === id);
+        return new Theme(themes.find(t => t.id === id));
     }
 
     static async findByParent(parentId) {
