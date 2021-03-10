@@ -1,0 +1,25 @@
+{
+  "name": "graphql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierreBeaufils/graphql-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PierreBeaufils/graphql-test/issues"
+  },
+  "homepage": "https://github.com/PierreBeaufils/graphql-test#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
